@@ -1,0 +1,108 @@
+ASSIGNMENT:-  INTRODUCTION TO JAVASCRIPT
+
+
+Que 1.  Compare Var, Let and Const in Javascript? When would you use each?
+
+Ans.  In Javascript, we can declare variables with Var, let and const keywords. 
+
+
+Var and Let creates variables that can be reassigned to another value.
+Const creates variables that cannot be reassigned to another value.
+
+Difference between var, let and const keywords are:-
+
+
+Scope of Variables
+Hoisting
+
+Scope of Variables:-
+Variables declared with var can have global or local scope. Variables declared with let and const keywords can have global, local or block scope. 
+
+Hoisting:-
+
+Variables declared with Var are hoisted, which means it can be accessed before its declarations.Var variables are hoisted with a default value of undefined.
+
+Variables declared with Let and const are hoisted but the hoisting is different from the Var. Let and const  variables are hoisted without default initialization. So when we try to access such variables before its declaration, instead of getting undefined it gives an error “Cannot access variable before its declarations”
+
+
+
+
+
+
+
+Que 2:-  What is hoisting in Javascript? How does it affect var,let and const?
+
+Ans. Hoisting in javascript means that we can access the variables before its declaration.
+It affects var, let and const in terms of accessibility because 
+Variable declared with var are hoisted which means it can be accessed before its declaration. If we try to access the value of this variable give undefined value.
+Variables declared with let and const are also hoisted. But when we try to access these variables it gives an error “Cannot access variables before its declaration”.
+In Current situation developers did not use Var keyword they prefer let and const.
+
+
+
+
+
+
+
+
+
+
+Que 3:-  Explain Javascript dynamic typing and typeof operator in javascript?
+
+Ans:-  Javascript is  a dynamic typed language. When we declare a variable, we do not specify what type of the variable is. Javascript engine automatically assign the type of the variable based on the value assigned to at runtime.
+
+For Example
+
+Var a = 3      // variable c is the number type
+a= ”Hello World” // now we change the variable c is String type
+
+typeof operator is used to get the what type of variable we are using.
+For Example
+ let b = “Say Hi”
+Console.log(typeof(b))  // print the type of b which is string
+
+let a = 54;
+Console.log(typeof(a)) // print the type of a which is of number type
+
+
+
+
+
+
+
+
+Que 4:- How can you manipulate strings in javascrpt? Provide examples of common methods?
+
+Ans:-  All string methods in javascript produce a new string without altering the original string. Some common methods are listed below:-
+
+String.length
+String.charAt()
+String.toUpperCase()
+String.toLowerCase()
+String.concat()
+String.substring() and more…
+
+
+
+
+
+
+
+
+
+
+
+Que 5:- What are the differences and similarities between null and undefined in javascript?
+
+Ans:- 
+
+Similarities
+
+Both are primitive javascript values, they are not considered objects and therefore don’t have methods or properties. Both are false when encountered in a boolean context(falsy values)
+
+Differences
+Null :- It is basically an assignment value given to a variable. The variable which has been assigned as null contains no value
+let x = null
+
+Undefined:- it means that the variable has been declared but its value has not been assigned.
+let x;
